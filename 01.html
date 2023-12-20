@@ -1,0 +1,49 @@
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+<script>
+    /*Agora vamos definir uma propriedade específica do CSS utilizando a seguinte sintaxe: $(seletor).css("nome_da_propriedade", "valor").*/
+$(document).ready(function () { 
+    $("button").click(function () {  //evento so e add ao clicar no botao
+    $("p").css({"background-color": "black", "color": "blueviolet"}); // seletor p = background red
+    $("h1").css("color", "green"); //seletor h1 = color green
+    });
+});
+
+$(document).ready(function(){
+
+    $("button").dblclick(function(){ //funcao duplo clik
+    $("h1").css({"background": "yellow", "color": "black", "border": "2px solid black"});
+    })  
+
+
+})
+$(document).ready(function(){
+    $("h2").mouseenter(function(){
+        $("h2").css("background", "red");
+    })
+
+})
+
+$(document).ready(function(){
+    $("h2").mouseout(function(){
+        $("h2").css("background", "gray");
+    })
+
+})
+</script>
+<style>
+p {
+background-color: blueviolet;
+color: white;
+padding: 10px;
+}
+</style>
+</head>
+<body>
+    <h1>click mudar cor de letra</h1>
+       <p>Clique no botao para mudar a cor de fundo.</p>
+    <h2>passe o mouse em cima</h2>
+<button>Clique aqui</button>
+</body>
+</html>
