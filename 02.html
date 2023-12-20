@@ -2,11 +2,13 @@
 <head>
 <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
 <script>
-    /*Vejamos como isso funciona, começando com a sintaxe para retornar o valor de uma propriedade CSS específica, que é dada por: $(seletor).css("nome_da_propriedade").*/
+    /*Vejamos como isso funciona, começando com a sintaxe para retornar o valor de uma propriedade CSS específica, 
+    que é dada por: $(seletor).css("nome_da_propriedade").*/
+
 $(document).ready(function () {
 let valor = $("p").css("background-color"); 
 $("button").click(function () {
-alert("Background-color=" + valor); 
+alert("o valor de Background-color =" + valor); 
 });
 });
 </script>
